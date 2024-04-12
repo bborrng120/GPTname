@@ -6,14 +6,14 @@ import pymysql
 
 app = Flask(__name__, template_folder='chatgpt_html_dir')
 
-os.environ['OPENAI_API_KEY'] = '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'
+os.environ['OPENAI_API_KEY'] = ''
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-host = "namedb.c0yqsa6ec0oa.ap-northeast-2.rds.amazonaws.com"
+host = ""
 port = 3306
-user = "root"
-password = "iceproject"
-database = "namedb"
+user = ""
+password = ""
+database = ""
 
 # 데이터베이스 insert 함수
 def insert_data(keyword, target, goal, source, mood, style, name_meaning):
